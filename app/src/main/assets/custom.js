@@ -45,7 +45,7 @@ function containsSubstring(mainStr, subStr, caseSensitive = true) {
 }
 
 var temp = window.location.host;
-if(containsSubstring(temp,"tauri.localhost")){
+if(containsSubstring(temp,"localhost")||containsSubstring(temp,"127.0.0.1")){
   var domin = temp;
 }else{
   let urlParams = new URLSearchParams(window.location.search); // window.location.href
